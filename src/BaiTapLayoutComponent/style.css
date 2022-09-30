@@ -1,0 +1,19 @@
+.navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    color: gray;
+}
+
+.key{
+    color: white;
+}
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+.container{
+    max-width: 1000px;
+}
