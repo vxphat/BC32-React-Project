@@ -17,3 +17,14 @@
 .container{
     max-width: 1000px;
 }
+
+.card-body .feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    line-height: 50px;
+    font-size: 2rem;
+    margin-top: -2rem;
+}
