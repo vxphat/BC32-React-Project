@@ -2,9 +2,13 @@
     max-width: 1000px;
 }
 
+p{
+    margin-bottom: 0;
+}
+
 .background{
     /* background: linear-gradient(#536976, #292E49); */
-    background: #F3F3F3;
+    background: #ffffff;
     min-height: 100vh;
 }
 
@@ -18,10 +22,83 @@
 
 .img-test{
     position: absolute;
-    top: 140px;
-    left: 448px;
+    top: 192px;
+    left: 525px;
 }
 
+.glass-desc{
+    width: 80%;
+    color: gray;
+}
+
+.glass-info{
+    text-align: left;
+}
+
+.glass-color li{
+    list-style: none;
+    margin-right: 10px;
+}
+.list-color{
+    display: flex;
+}
+.style{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* border: 1px solid gray; */
+    cursor: pointer;
+}
+.style:hover{
+    box-shadow: 0 2px 15px rgb(0 0 0 / 15%);
+}
+.nude{
+    background-color: antiquewhite;
+}
+.blue{
+    background-color: #212224;
+}
+.yellow{
+    background-color: #CFB3C0;
+}
+.red{
+    background-color: lightcoral;
+}
+
+.glass-size{
+    display: flex;
+    align-items: center;
+}
+
+.style-size{
+    margin-left: 10px;
+    background-color: bisque;
+    line-height: 30px;
+    text-align: center;
+}
+
+.glass-info .btn-cart{
+    padding: 10px 40px;
+    border: 1px solid black;
+
+transition: all 0.5s;
+}
+
+.glass-info .btn-cart:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn:focus{
+    outline: none!important;
+    border: 1px solid transparent;
+}
+
+.btn:active{
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+}
 
 
 

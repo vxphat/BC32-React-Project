@@ -22,11 +22,26 @@ export default class Glasses extends Component {
 
   render() {
     return (
-      <div className='background'>
-        <Header />
-        <Model glass={this.state.selectedGlasses}/>
-        <TestGlasses glass={this.state.selectedGlasses}/>
-        <GlassesList glassess={data} onSelect={this.handleSelect}/>
+      <div className="background">
+        <header>
+          <Header />
+        </header>
+        <div className="container text-center mt-5">
+          <div className="row">
+            <div className="col-8 p-0">
+              <img
+                className="img-model"
+                src="./img/model.png"
+                alt="model"
+                width="250px"
+              />
+            </div>
+            <div className="col-4" >
+              <TestGlasses glass={this.state.selectedGlasses} />
+            </div>
+          </div>
+        </div>
+        <GlassesList glassess={data} onSelect={this.handleSelect} />
       </div>
     );
   }
