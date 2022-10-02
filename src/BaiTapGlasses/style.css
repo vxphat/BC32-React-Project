@@ -1,0 +1,27 @@
+.container{
+    max-width: 1000px;
+}
+
+.background{
+    /* background: linear-gradient(#536976, #292E49); */
+    background: #F3F3F3;
+    min-height: 100vh;
+}
+
+.img-glass:hover{
+    transform: translateY(-10px);
+}
+
+.img-glass{
+    transition: all 0.5s;
+}
+
+.img-test{
+    position: absolute;
+    top: 140px;
+    left: 448px;
+}
+
+
+
+
