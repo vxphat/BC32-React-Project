@@ -1,23 +1,25 @@
 import React, { Component } from "react";
 import GlassesList from "./GlassesList";
 import Header from "./Header";
-import Model from "./Model";
 import data from "./dataGlasses.json";
 import "./style.css";
 import TestGlasses from "./TestGlasses";
 
 export default class Glasses extends Component {
-  constructor(props) {
-    super(props);
+  constructor(glass) {
+    super(glass);
 
     this.state = {
-      selectedGlasses: null,
+      selectedGlasses: glass,
     };
   }
 
   handleSelect = (glass) => {
     //glass: kính khi click vào từng loại
     this.setState({ selectedGlasses: glass });
+
+    //Lưu thông tin của loại kính được chọn xuống localstoreage
+    localStorage.setItem("Glasses", JSON.stringify(glass))
   };
 
   render() {

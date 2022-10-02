@@ -1,9 +1,8 @@
 import React from "react";
 
-const TestGlasses = ({ glass }) => {
-  if (!glass) {
-    return null;
-  }
+const TestGlasses = () => {
+  //Lấy thông tin kính được chọn từ localstorage lên nạp vào glass
+   const glass = JSON.parse(localStorage.getItem('Glasses'));
 
   return (
     <div>
@@ -11,7 +10,7 @@ const TestGlasses = ({ glass }) => {
         className="img-test"
         src={glass.url}
         alt={glass.name}
-        width="140px"
+        width="150px"
       />
 
       <div className="glass-info">

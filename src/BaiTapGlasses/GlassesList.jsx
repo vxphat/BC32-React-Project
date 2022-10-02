@@ -3,7 +3,7 @@ import React from "react";
 const GlassesList = ({ glassess, onSelect }) => {
   return (
     <div className="container text-center">
-    <div className="row py-5 mt-5">
+    <div className="row pb-5 mt-5">
       
       {glassess.map((glass) => {
         return (
