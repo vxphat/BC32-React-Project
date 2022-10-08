@@ -10,7 +10,7 @@ const TestGlasses = () => {
         className="img-test"
         src={glass.url}
         alt={glass.name}
-        width="150px"
+        width="140px"
       />
 
       <div className="glass-info">

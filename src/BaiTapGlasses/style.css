@@ -28,7 +28,8 @@ p{
 .img-test{
     position: absolute;
     top: 190px;
-    left: 518px;
+    left: 525px;
+    /* transform: rotate(10deg); */
 }
 
 .glass-desc{

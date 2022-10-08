@@ -39,7 +39,7 @@ export default class Glasses extends Component {
               />
             </div>
             <div className="col-4" >
-              <TestGlasses glass={this.state.selectedGlasses} />
+              <TestGlasses />
             </div>
           </div>
         </div>
