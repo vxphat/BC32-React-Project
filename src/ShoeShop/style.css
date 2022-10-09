@@ -1,0 +1,61 @@
+.container{
+    max-width: 1000px;
+}
+
+header i{
+    font-size: 25px;
+    color: #aaaaaa;
+    transition: all 0.5s;
+}
+
+header i:hover{
+    color: white;
+}
+
+header .header-title{
+    color: #aaaaaa;
+}
+
+header .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item:hover{
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 15%);
+}
+
+.modal-details tr td:first-child{
+    font-weight: 600;
+}
+
+.cart .offcanvas{
+    width: 1000px!important;
+}
+
+.cart tbody{
+    vertical-align: middle;
+}
+
+.cart .table th{
+    justify-content: center;
+}
+.header-end .btn-cart{
+    position: relative;
+}
+.header-end .total{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  font-size: 12px;
+  background-color: white;
+  width: 15px;
+  z-index: 1000;
+  border-radius: 50%;
+  height: 15px; 
+  line-height: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
