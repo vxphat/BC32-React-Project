@@ -1,0 +1,150 @@
+:root {
+  --cl-bg-1: #c33764;
+  --cl-bg-2: #1d2671;
+  --cl-selected: rgb(251, 192, 45);
+  --cl-select: rgb(2, 136, 209);
+  --cl-no-select: rgb(224, 224, 224);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #c33764, #1d2671);
+  color: #ffffff;
+  text-align: center;
+}
+
+input {
+  padding: 5px 10px;
+  min-width: 200px;
+}
+
+.ticket {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfo div {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.userInfo div > *:first-child {
+  min-width: 50px;
+  margin-right: 15px;
+}
+
+.seatChoice {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.seatType {
+  margin-bottom: 40px;
+}
+
+.seatType span {
+  margin: 0 30px;
+}
+
+.seatSelected::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--cl-selected);
+  margin-right: 10px;
+}
+
+.seatReserved::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--cl-select);
+  margin-right: 10px;
+}
+
+.seatEmpty::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--cl-no-select);
+  margin-right: 10px;
+}
+
+.screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(at 50% 0, rgba(31, 73, 125, 0.9), transparent 80%);
+}
+
+.seatList {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border: solid 5px transparent;
+  border-color: gray transparent transparent transparent;
+  border-radius: 50%/60px 60px 0 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: fit-content;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.seatLine {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.lineHang {
+  color: var(--cl-selected);
+  font-weight: 600;
+}
+
+.seat {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 27px;
+  border-radius: 6px;
+  background: var(--cl-no-select);
+  cursor: pointer;
+  border: 2px solid var(--cl-selected);
+  color: #1d2671;
+  font-weight: 600;
+}
+
+.colNumber {
+  width: 40px;
+}
+
+.selected {
+  background-color: rgb(251, 192, 45);
+  cursor: default;
+}
+
+.active {
+  background-color: rgb(251, 192, 45);
+}/*# sourceMappingURL=style.css.map */
