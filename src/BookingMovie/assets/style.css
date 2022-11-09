@@ -141,10 +141,10 @@ input {
 }
 
 .selected {
-  background-color: rgb(251, 192, 45);
+  background: var(--cl-selected);
   cursor: default;
 }
 
 .active {
-  background-color: rgb(251, 192, 45);
+  background: var(--cl-select);
 }/*# sourceMappingURL=style.css.map */
